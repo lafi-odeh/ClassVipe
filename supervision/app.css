@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+}
+
+.head {
+    position: relative;
+    width: 100%;
+    height: 8%;
+}
+
+.logo {
+    position: absolute;
+    float: left;
+    width: 18.65%;
+    height: 100%;
+    display: inline;
+    border: 4px solid rgba(44, 98, 238, 0.24);
+    background-color: white;
+    z-index: 1;
+    border-radius: 50px;
+}
+
+.bar {
+    position: absolute;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+    border-bottom: 4px solid rgba(44, 98, 238, 0);
+    border-top: 4px solid rgba(44, 98, 238, 0);
+    background-color: rgba(44, 98, 238, 0.24);
+}
+
+.logo img {
+    position: absolute;
+    left: 7%;
+    top: 5%;
+}
+
+span {
+    position: absolute;
+    top: 10%;
+    left: 30%;
+    color: #004380;
+    font-size: 30px;
+}
+
+span span {
+    position: absolute;
+    top: 0%;
+    left: 100%;
+    color: #FE792F;
+}
+
+.container {
+    position: relative;
+    width: 94%;
+    height: 84.6%;
+    top: 1.2%;
+    padding: 1.5% 3%;
+}
+
+.teachers,
+.chats,
+.chat {
+    position: absolute;
+    background-color: rgba(236, 144, 111, 0.9);
+    width: 15%;
+    height: 88%;
+    border-radius: 20px;
+}
+
+.chats {
+    background-color: rgba(236, 144, 111, 0.5);
+    left: 20%;
+}
+
+.chat {
+    background-color: rgba(236, 144, 111, 0.1);
+    left: 37%;
+    width: 60%;
+}
+
+.logout {
+    position: relative;
+    top: 96%;
+    left: -2%;
+    background-color: #FFEFEF;
+    width: 15%;
+    height: 7%;
+    border-radius: 10px;
+}
+
+.logout img {
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    width: 15%;
+}
+
+.logout span {
+    position: absolute;
+    font-size: 20px;
+    left: 35%;
+    top: 15%;
+    color: #F93333;
+    font-weight: bold;
+}
+
+.header {
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    color: #004380
+}
+
+.content {
+    width: 94%;
+    height: 88%;
+    padding: 2% 2%;
+    margin: 0% 1%;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+.teachers .content,
+.chats .content {
+    height: 92%;
+}
+
+.box {
+    position: absolute;
+    width: 94%;
+    height: 80%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.feedback {
+    position: absolute;
+    top: 90%;
+}
+
+.feedback textarea {
+    resize: none;
+    padding: 1% 1%;
+}
+
+.feedback .sendButton {
+    position: absolute;
+    left: 104%;
+    top: 0%;
+    color: #FFEFEF;
+    width: 28%;
+    font-size: 20px;
+    padding: 2% 2%;
+    background-color: rgba(236, 144, 111, 0.88);
+    border-radius: 20px;
+    text-align: center;
+}
