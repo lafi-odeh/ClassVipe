@@ -263,6 +263,8 @@ span {
 
 .footer p {
     position: absolute;
+    text-align: center;
+    font-style: italic;
     left: 10%;
     top: 30%;
     display: inline;
