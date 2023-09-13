@@ -5,11 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ClassVibe - SignUp</title>
     <link rel="StyleSheet" href="..\CSS Files\SignUp.css" />
-    <script src="..\JS Files\SignUp.js"></script>
+    <script type="module" src="..\JS Files\SignUp.js"></script>
   </head>
   <body>
     <div class="left">
-      <img src="..\Images\SignUp-Image.png" alt="Kids in Class" />
+      <img src="..\Images\SignUp-Image.png" alt="Kids in Class" onclick="sendData()" />
     </div>
     <div class="right">
       <div class="head">
@@ -18,7 +18,7 @@
         <p>Have an account ? <a href="LogIn.html">Sign In!</a></p>
       </div>
       <div class="form">
-        <form action="">
+        <form method="post">
           <p>Get started with ClassVibe</p>
           <fieldset>
             <select name="salutation" id="gender">

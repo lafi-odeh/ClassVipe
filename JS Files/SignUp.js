@@ -1,19 +1,15 @@
-var admin = require("firebase-admin");
+var messgaes = [];
 
-var serviceAccount = require("./serviceAccountKey.json");
-const { QuerySnapshot } = require("@google-cloud/firestore");
+async function sendData() {
+  var request = await fetch("/SignUp", {
+    method: "GET",
+    headers: {
+      "Content-Type": "application/json",
+    },
+    body: null,
+  });
 
-admin.initializeApp({
-  credential: admin.credential.cert(serviceAccount),
-  databaseURL: "https://classvibe-25cc2-default-rtdb.asia-southeast1.firebasedatabase.app"
-});
-
-const db = admin.firestore()
-
-let userInfo = db.collection("UserInfo");
-
-userInfo.get().then((querySnapshot)=>{
-    querySnapshot.forEach(doc => {
-        console.log(doc.data());
-    });
-})
+  var data = await request.json().then((data) => {
+    console.log(data);
+  });
+}
